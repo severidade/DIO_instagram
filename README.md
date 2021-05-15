@@ -1,4 +1,4 @@
-🦄 DIO_instagram
+# 🦄 DIO_instagram
 Recriando a página incial do instagram para o Bootcamp HTML Web Developer
 
 O Desafio era recriar a página inicial do Instagram e para isso tentei ser o mais fiel possível, mantendo inclusive a animação que apresenta as telas do app. Fiz isso usando somente os recursos de Animação CSS. Essa escolha teve como objetivo reduzir o tempo de carregamento da página em comparação com o uso de uma biblioteca JavaScript.
