@@ -1,0 +1,61 @@
+@keyframes troca_fundo { 
+    0% {
+        background-image: url(../img/galeria/0a2d3016f375.jpg);
+    } 30% {
+        background-image: url(../img/galeria/6f03eb85463c.jpg);
+    } 50% {
+        background-image: url(../img/galeria/842fe5699220.jpg);
+    } 70% {
+        background-image: url(../img/galeria/d6bf0c928b5a.jpg);
+    } 90% {
+        background-image: url(../img/galeria/f0c687aa6ec2.jpg);
+    }100% {
+        background-image: url(../img/galeria/0a2d3016f375.jpg);
+    }
+}
+body {
+    /*Secundária*/
+    --cor_secundaria: #0095f6;
+    /*Neutras*/
+    --cor_neutra_01: #ffffff ;
+    --cor_neutra_02: #fafafa;
+    --cor_neutra_03: #e8e8e8;
+    width: 100%; min-height: 100vh; background-color: var(--cor_neutra_02); display: flex; justify-content: center; align-items: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; font-size: 14px; line-height: 18px;
+}
+.instagram-wapper { display: flex; justify-content: center; align-items: center;max-width: 935px; margin: 32px 0; }
+
+/* Coluna Esquerda*/
+.mockup-phone { width: 454px; height: 618px;}
+.mockup-phone::before { animation: troca_fundo 10s ease-in-out infinite; content: ""; position: absolute; width: 240px; height: 427px; background-size: contain; background-repeat: no-repeat; transform: translate(151px, 100px); }
+
+/*coluna Direita*/
+.section_login { max-width: 350px;}
+.logo { width: 175px; height: 51px; background: url(../img/css_sprites.png) -10px -10px no-repeat; text-indent: -100%; overflow: hidden; margin: 22px auto 12px; }
+.conteiner_login, .conteiner_logout {background: var(--cor_neutra_01); border: solid 1px var(--cor_neutra_03); border-radius: 1px; margin-bottom: 20px; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+
+.avatar button{ width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin-bottom: 20px;}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.conteiner_download p { text-align:  center; margin-bottom: 20px;}
+.conteiner_download div { display: flex; justify-content: center; }
+.bt_google, .bt_apple { display: block; height: 40px; overflow: hidden; text-indent: -100%;}
+    .conteiner_download .bt_apple { width: 136px; background: url(../img/css_sprites.png) no-repeat -10px -81px; margin-right: 20px;}
+    .conteiner_download .bt_google {width: 134px; background: url(../img/css_sprites.png) no-repeat -10px -141px; }
+
+/* Links e botões */
+.reboot_button { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: 0 0; border: 0; cursor: pointer; font-weight: 600; }
+.link_blue { color: var(--cor_secundaria);}
+
+/*quanto mais específico o seletor maior o peso do estilo*/
+button.instagram-login {  background: var(--cor_secundaria); color: #ffffff; width: 100%; padding: 10px; border-radius: 5px; }
+.conteiner_logout button { margin-top: 5px;}
+
+@media (max-width: 1024px){
+    .instagram-wapper {width: 100%;}
+}
+@media (max-width: 800px){
+    .instagram-wapper { width: 90%; }
+    .mockup-phone { display: none;}
+    .section_login { min-width: 277px;}
+}
